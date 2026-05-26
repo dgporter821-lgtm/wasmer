@@ -1,0 +1,9 @@
+{
+  "runtime": "nodejs",
+  "version": "20",
+  "start": "node src/server.js",
+  "env": {
+    "PORT": "8080",
+    "HOST": "0.0.0.0"
+  }
+}
