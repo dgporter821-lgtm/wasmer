@@ -2,6 +2,7 @@
 kind: wasmer.io/App.v0
 
 name: xhttp-config-generator
+owner: dgporter821-lgtm
 
 # Use the official Node.js WASM runtime on Wasmer
 package: wasmer/nodejs@latest
