@@ -1,0 +1,25 @@
+# wasmer.yaml - Deploy configuration for wasmer.io
+kind: wasmer.io/App.v0
+
+name: xhttp-config-generator
+
+# Use the official Node.js WASM runtime on Wasmer
+package: wasmer/nodejs@latest
+
+# App entrypoint
+command: node src/server.js
+
+# Environment variables
+env:
+  PORT: "8080"
+  HOST: "0.0.0.0"
+  NODE_ENV: "production"
+
+# Scaling (free tier)
+scaling:
+  mode: single_concurrency
+
+# Health check
+healthcheck:
+  http:
+    path: /api/health

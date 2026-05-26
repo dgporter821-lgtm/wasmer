@@ -1,0 +1,14 @@
+{
+  "name": "xhttp-config-generator",
+  "version": "1.0.0",
+  "description": "XHTTP Config Generator - Deploy on Wasmer.io",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=18"
+  }
+}
